@@ -24,18 +24,18 @@ class DevelopmentConfig(Config):
 
     SECRET_KEY = 'super-secret-key'
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://aiyo:free1Vod@localhost:5432/smilebook'
+    SQLALCHEMY_DATABASE_URL = 'postgresql+psycopg2://aiyo:free1Vod@localhost:5432/smilebook'
 
 
 class StagingConfig(Config):
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URL = os.environ.get('DATABASE_URL')
 
 
 class ProductionConfig(Config):
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URL = os.environ.get('DATABASE_URL')
 
