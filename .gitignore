@@ -1,0 +1,5 @@
+static/images/avatars/*
+static/images/covers/*
+script.py
+.idea/
+venv/
